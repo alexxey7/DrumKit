@@ -11,7 +11,7 @@ for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
 }
 
 addEventListener("keydown", function (event) {
-    MakeSound(event.key);
+    MakeSound(event.key.toLowerCase());
 });
 
 function MakeSound(key) {
